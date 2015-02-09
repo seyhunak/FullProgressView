@@ -13,6 +13,12 @@
 		7AD118851A7E626800BB631E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AD118841A7E626800BB631E /* Images.xcassets */; };
 		7AD118881A7E626800BB631E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AD118861A7E626800BB631E /* LaunchScreen.xib */; };
 		7AD118941A7E626800BB631E /* FullProgressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD118931A7E626800BB631E /* FullProgressTests.swift */; };
+		7AD118A71A7E626F00BB631E /* FullProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AD118A61A7E626F00BB631E /* FullProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7AD118AD1A7E627000BB631E /* FullProgressView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD118A21A7E626F00BB631E /* FullProgressView.framework */; };
+		7AD118B61A7E627000BB631E /* FullProgressViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD118B51A7E627000BB631E /* FullProgressViewTests.swift */; };
+		7AD118B91A7E627000BB631E /* FullProgressView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD118A21A7E626F00BB631E /* FullProgressView.framework */; };
+		7AD118BA1A7E627000BB631E /* FullProgressView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD118A21A7E626F00BB631E /* FullProgressView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7AD118C31A7E62C100BB631E /* FullProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD118C21A7E62C100BB631E /* FullProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +29,42 @@
 			remoteGlobalIDString = 7AD118771A7E626800BB631E;
 			remoteInfo = FullProgress;
 		};
+		7AD118AE1A7E627000BB631E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AD118701A7E626800BB631E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AD118A11A7E626F00BB631E;
+			remoteInfo = FullProgressView;
+		};
+		7AD118B01A7E627000BB631E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AD118701A7E626800BB631E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AD118771A7E626800BB631E;
+			remoteInfo = FullProgress;
+		};
+		7AD118B71A7E627000BB631E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AD118701A7E626800BB631E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AD118A11A7E626F00BB631E;
+			remoteInfo = FullProgressView;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7AD118BE1A7E627000BB631E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7AD118BA1A7E627000BB631E /* FullProgressView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7AD118781A7E626800BB631E /* FullProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FullProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +77,13 @@
 		7AD1188D1A7E626800BB631E /* FullProgressTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FullProgressTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AD118921A7E626800BB631E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7AD118931A7E626800BB631E /* FullProgressTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullProgressTests.swift; sourceTree = "<group>"; };
+		7AD118A21A7E626F00BB631E /* FullProgressView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FullProgressView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AD118A51A7E626F00BB631E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AD118A61A7E626F00BB631E /* FullProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FullProgressView.h; sourceTree = "<group>"; };
+		7AD118AC1A7E627000BB631E /* FullProgressViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FullProgressViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AD118B41A7E627000BB631E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AD118B51A7E627000BB631E /* FullProgressViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullProgressViewTests.swift; sourceTree = "<group>"; };
+		7AD118C21A7E62C100BB631E /* FullProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AD118B91A7E627000BB631E /* FullProgressView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +99,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AD1189E1A7E626F00BB631E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AD118A91A7E627000BB631E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AD118AD1A7E627000BB631E /* FullProgressView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +125,8 @@
 			children = (
 				7AD1187A1A7E626800BB631E /* FullProgress */,
 				7AD118901A7E626800BB631E /* FullProgressTests */,
+				7AD118A31A7E626F00BB631E /* FullProgressView */,
+				7AD118B21A7E627000BB631E /* FullProgressViewTests */,
 				7AD118791A7E626800BB631E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +136,8 @@
 			children = (
 				7AD118781A7E626800BB631E /* FullProgress.app */,
 				7AD1188D1A7E626800BB631E /* FullProgressTests.xctest */,
+				7AD118A21A7E626F00BB631E /* FullProgressView.framework */,
+				7AD118AC1A7E627000BB631E /* FullProgressViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,7 +180,53 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7AD118A31A7E626F00BB631E /* FullProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				7AD118A61A7E626F00BB631E /* FullProgressView.h */,
+				7AD118A41A7E626F00BB631E /* Supporting Files */,
+				7AD118C21A7E62C100BB631E /* FullProgressView.swift */,
+			);
+			path = FullProgressView;
+			sourceTree = "<group>";
+		};
+		7AD118A41A7E626F00BB631E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7AD118A51A7E626F00BB631E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7AD118B21A7E627000BB631E /* FullProgressViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				7AD118B51A7E627000BB631E /* FullProgressViewTests.swift */,
+				7AD118B31A7E627000BB631E /* Supporting Files */,
+			);
+			path = FullProgressViewTests;
+			sourceTree = "<group>";
+		};
+		7AD118B31A7E627000BB631E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7AD118B41A7E627000BB631E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7AD1189F1A7E626F00BB631E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AD118A71A7E626F00BB631E /* FullProgressView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		7AD118771A7E626800BB631E /* FullProgress */ = {
@@ -122,10 +236,12 @@
 				7AD118741A7E626800BB631E /* Sources */,
 				7AD118751A7E626800BB631E /* Frameworks */,
 				7AD118761A7E626800BB631E /* Resources */,
+				7AD118BE1A7E627000BB631E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7AD118B81A7E627000BB631E /* PBXTargetDependency */,
 			);
 			name = FullProgress;
 			productName = FullProgress;
@@ -150,6 +266,43 @@
 			productReference = 7AD1188D1A7E626800BB631E /* FullProgressTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		7AD118A11A7E626F00BB631E /* FullProgressView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AD118BB1A7E627000BB631E /* Build configuration list for PBXNativeTarget "FullProgressView" */;
+			buildPhases = (
+				7AD1189D1A7E626F00BB631E /* Sources */,
+				7AD1189E1A7E626F00BB631E /* Frameworks */,
+				7AD1189F1A7E626F00BB631E /* Headers */,
+				7AD118A01A7E626F00BB631E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FullProgressView;
+			productName = FullProgressView;
+			productReference = 7AD118A21A7E626F00BB631E /* FullProgressView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7AD118AB1A7E627000BB631E /* FullProgressViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AD118BF1A7E627000BB631E /* Build configuration list for PBXNativeTarget "FullProgressViewTests" */;
+			buildPhases = (
+				7AD118A81A7E627000BB631E /* Sources */,
+				7AD118A91A7E627000BB631E /* Frameworks */,
+				7AD118AA1A7E627000BB631E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7AD118AF1A7E627000BB631E /* PBXTargetDependency */,
+				7AD118B11A7E627000BB631E /* PBXTargetDependency */,
+			);
+			name = FullProgressViewTests;
+			productName = FullProgressViewTests;
+			productReference = 7AD118AC1A7E627000BB631E /* FullProgressViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -163,6 +316,13 @@
 						CreatedOnToolsVersion = 6.2;
 					};
 					7AD1188C1A7E626800BB631E = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 7AD118771A7E626800BB631E;
+					};
+					7AD118A11A7E626F00BB631E = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					7AD118AB1A7E627000BB631E = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 7AD118771A7E626800BB631E;
 					};
@@ -183,6 +343,8 @@
 			targets = (
 				7AD118771A7E626800BB631E /* FullProgress */,
 				7AD1188C1A7E626800BB631E /* FullProgressTests */,
+				7AD118A11A7E626F00BB631E /* FullProgressView */,
+				7AD118AB1A7E627000BB631E /* FullProgressViewTests */,
 			);
 		};
 /* End PBXProject section */
@@ -199,6 +361,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7AD1188B1A7E626800BB631E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AD118A01A7E626F00BB631E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AD118AA1A7E627000BB631E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -225,6 +401,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7AD1189D1A7E626F00BB631E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AD118C31A7E62C100BB631E /* FullProgressView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AD118A81A7E627000BB631E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AD118B61A7E627000BB631E /* FullProgressViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +424,21 @@
 			isa = PBXTargetDependency;
 			target = 7AD118771A7E626800BB631E /* FullProgress */;
 			targetProxy = 7AD1188E1A7E626800BB631E /* PBXContainerItemProxy */;
+		};
+		7AD118AF1A7E627000BB631E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7AD118A11A7E626F00BB631E /* FullProgressView */;
+			targetProxy = 7AD118AE1A7E627000BB631E /* PBXContainerItemProxy */;
+		};
+		7AD118B11A7E627000BB631E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7AD118771A7E626800BB631E /* FullProgress */;
+			targetProxy = 7AD118B01A7E627000BB631E /* PBXContainerItemProxy */;
+		};
+		7AD118B81A7E627000BB631E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7AD118A11A7E626F00BB631E /* FullProgressView */;
+			targetProxy = 7AD118B71A7E627000BB631E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -386,6 +593,83 @@
 			};
 			name = Release;
 		};
+		7AD118BC1A7E627000BB631E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FullProgressView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7AD118BD1A7E627000BB631E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FullProgressView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7AD118C01A7E627000BB631E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FullProgressViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FullProgress.app/FullProgress";
+			};
+			name = Debug;
+		};
+		7AD118C11A7E627000BB631E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FullProgressViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FullProgress.app/FullProgress";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -411,6 +695,22 @@
 			buildConfigurations = (
 				7AD1189B1A7E626800BB631E /* Debug */,
 				7AD1189C1A7E626800BB631E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7AD118BB1A7E627000BB631E /* Build configuration list for PBXNativeTarget "FullProgressView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AD118BC1A7E627000BB631E /* Debug */,
+				7AD118BD1A7E627000BB631E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7AD118BF1A7E627000BB631E /* Build configuration list for PBXNativeTarget "FullProgressViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AD118C01A7E627000BB631E /* Debug */,
+				7AD118C11A7E627000BB631E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
